@@ -1,0 +1,407 @@
+\section{手順}
+最初に、student\_id の部分に「801」を入力してデータを生成しておく。
+\subsection{課題1}
+\hyperlink{kbouhou2}{\hypertarget{kbouhou}{\subsubsection{k最近傍法}}}
+パラメータを表\ref{table:1}のように設定して実行する。
+\begin{table}[hbtp]
+  \centering
+  \caption{1.1.1のパラメータ}
+  \label{table:1}
+    \begin{tabular}{|l|c|}
+      \hline
+      パラメータ  & 値  \\
+      \hline 
+      train\_start  & 1 \\
+      train\_end  & 400  \\
+      train2\_start  & 0  \\
+      train2\_end  &  0 \\
+      test\_start  &  501 \\
+      test\_end  &  10000 \\
+      k\_NN  &  3 \\
+      \hline
+    \end{tabular}
+\end{table}
+
+\hyperlink{holda2}{\hypertarget{holda}{\subsubsection{ホールドアウト法（最初の80\%を学習・残りの20\%をテスト）}}}
+\begin{enumerate}
+  \item 全データ500の内、最初の80\%を学習データ、残りの20\%をテストデータにするため、400個を学習データに、100個をテストデータに分ける
+  \item 上記のことから、1番目から400番目までのデータを学習データに、401番目から500番目のデータをテストデータにする。
+  \item よって、パラメータを表\ref{table:2}のように設定して実行する。
+\end{enumerate}
+
+\begin{table}[hbtp]
+  \centering
+  \caption{1.1.2のパラメータ}
+  \label{table:2}
+    \begin{tabular}{|l|c|}
+      \hline
+      パラメータ  & 値  \\
+      \hline
+      train\_start  & 1 \\
+      train\_end  & 400  \\
+      train2\_start  & 0  \\
+      train2\_end  &  0 \\
+      test\_start  &  401 \\
+      test\_end  &  500 \\
+      k\_NN  &  3 \\
+      \hline
+    \end{tabular}
+\end{table}
+\clearpage
+
+\hyperlink{holdb2}{\hypertarget{holdb}{\subsubsection{ホールドアウト法（最初の20\%をテスト・残りの80\%を学習）}}}
+\begin{enumerate}
+  \item 全データ500の内、最初の20\%をテストデータ、残りの80\%を学習データにするため、400個を学習データに、100個をテストデータに分ける
+  \item 上記のことから、1番目から100番目までのデータをテストデータに、101番目から500番目のデータを学習データにする。
+  \item よって、パラメータを表\ref{table:3}のように設定して実行する。
+\end{enumerate}
+\begin{table}[hbtp]
+  \centering
+  \caption{1.1.3のパラメータ}
+  \label{table:3}
+    \begin{tabular}{|l|c|}
+      \hline
+      パラメータ  & 値  \\
+      \hline
+      train\_start  & 101 \\
+      train\_end  & 500  \\
+      train2\_start  & 0  \\
+      train2\_end  &  0 \\
+      test\_start  &  1 \\
+      test\_end  &  100 \\
+      k\_NN  &  3 \\
+      \hline
+    \end{tabular}  
+\end{table}
+
+\hyperlink{gobun2}{\hypertarget{gobun}{\subsubsection{5分割の交差確認法}}}
+
+\begin{enumerate}
+  \item 全データ500を5分割して、それらを1つずつテストデータにする。
+  \item その時の学習データには、それぞれの残りのデータを使う。
+  \item よって、パラメータを表\ref{table:4}～表\ref{table:8}のように設定して、それぞれ実行する。
+\end{enumerate}
+
+\begin{table}[hbtp]
+  \begin{tabular}{ccccc}
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{testdata:1～100}
+        \label{table:4}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 101 \\
+          train\_end  & 500  \\
+          train2\_start  & 0  \\
+          train2\_end  &  0 \\
+          test\_start  &  1 \\
+          test\_end  &  100 \\
+          k\_NN  &  3 \\
+          \hline
+        \end{tabular}      
+      \end{center}
+    \end{minipage}
+    
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{testdata:101～200}
+        \label{table:5}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 100  \\
+          train2\_start  & 201  \\
+          train2\_end  &  500 \\
+          test\_start  &  101 \\
+          test\_end  &  200 \\
+          k\_NN  &  3 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+    
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{testdata:201～300}
+        \label{table:6}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 200  \\
+          train2\_start  & 301  \\
+          train2\_end  &  500 \\
+          test\_start  &  201 \\
+          test\_end  &  300 \\
+          k\_NN  &  3 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+    
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{testdata:301～400}
+        \label{table:7}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 300  \\
+          train2\_start  & 401  \\
+          train2\_end  &  500 \\
+          test\_start  &  301 \\
+          test\_end  &  400 \\
+          k\_NN  &  3 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+    
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{testdata:401～500}
+        \label{table:8}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 400  \\
+          train2\_start  & 0  \\
+          train2\_end  &  0 \\
+          test\_start  &  401 \\
+          test\_end  &  500 \\
+          k\_NN  &  3 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+  \end{tabular}
+\end{table}
+\clearpage
+
+\subsection{課題2}
+\hyperlink{hyperpara2}{\hypertarget{hyperpara}{\subsubsection{最近傍法のハイパーパラメータの最適化}}}
+\begin{enumerate}
+  \item 全データ500の内、401番目から500番目をテストデータとする。
+  \item 残りのデータ400から、学習データと検証データの比が3:1となるように分けると、それぞれ300個と100個のデータに分けられる。
+  \item 上記より、学習データを1番目から300番目とし、検証データを301番目から400番目のデータとする。
+  \item まずは、適当に選んだ5個以上の候補値にkの値を変えながら、検証データをテストに用いて、汎化能力を評価する。
+  \item 上記より、パラメータを表\ref{table:9}～表\ref{table:17}のように設定して、それぞれ実行する。
+  \item 実行した中で、評価値が一番高くなるkの値を見つける。
+  \item ハイパーパラメータ最適化の結果の評価をするために、表\ref{table:18}のように、テストに用いるデータ
+  を検証データからテストデータに変えた上で、学習に用いるデータに検証データも入れて、評価値が一番高いkの値を入れて再度実行する。
+\end{enumerate}
+
+\begin{table}[hbtp]
+  \begin{tabular}{ccccc}
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{k=1}
+        \label{table:9}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 300  \\
+          train2\_start  & 0  \\
+          train2\_end  &  0 \\
+          test\_start  &  301 \\
+          test\_end  &  400 \\
+          k\_NN  &  1 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+    
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{k=6}
+        \label{table:10}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 300  \\
+          train2\_start  & 0  \\
+          train2\_end  &  0 \\
+          test\_start  &  301 \\
+          test\_end  &  400 \\
+          k\_NN  &  6 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+    
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{k=10}
+        \label{table:11}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 300  \\
+          train2\_start  & 0  \\
+          train2\_end  &  0 \\
+          test\_start  &  301 \\
+          test\_end  &  400 \\
+          k\_NN  &  10 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+    
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{k=17}
+        \label{table:12}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 300  \\
+          train2\_start  & 0  \\
+          train2\_end  &  0 \\
+          test\_start  &  301 \\
+          test\_end  &  400 \\
+          k\_NN  &  17 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+    
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{k=24}
+        \label{table:13}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 300  \\
+          train2\_start  & 0  \\
+          train2\_end  &  0 \\
+          test\_start  &  301 \\
+          test\_end  &  400 \\
+          k\_NN  &  24 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+  \end{tabular}
+  
+  \begin{tabular}{ccccc}
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{k=30}
+        \label{table:14}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 300  \\
+          train2\_start  & 0  \\
+          train2\_end  &  0 \\
+          test\_start  &  301 \\
+          test\_end  &  400 \\
+          k\_NN  &  30 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+    
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{k=38}
+        \label{table:15}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 300  \\
+          train2\_start  & 0  \\
+          train2\_end  &  0 \\
+          test\_start  &  301 \\
+          test\_end  &  400 \\
+          k\_NN  &  38 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+    
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{k=45}
+        \label{table:16}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 300  \\
+          train2\_start  & 0  \\
+          train2\_end  &  0 \\
+          test\_start  &  301 \\
+          test\_end  &  400 \\
+          k\_NN  &  45 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+    
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{k=52}
+        \label{table:17}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 300  \\
+          train2\_start  & 0  \\
+          train2\_end  &  0 \\
+          test\_start  &  301 \\
+          test\_end  &  400 \\
+          k\_NN  &  52 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+    
+    \begin{minipage}{0.18\hsize}
+      \begin{center}
+        \caption{test run}
+        \label{table:18}
+        \begin{tabular}{|l|c|}
+          \hline
+          パラメータ  & 値  \\
+          \hline
+          train\_start  & 1 \\
+          train\_end  & 400  \\
+          train2\_start  & 0  \\
+          train2\_end  &  0 \\
+          test\_start  &  401 \\
+          test\_end  &  500 \\
+          k\_NN  &  38 \\
+          \hline
+        \end{tabular}
+      \end{center}
+    \end{minipage}
+  \end{tabular}
+\end{table}
