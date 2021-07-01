@@ -1,8 +1,8 @@
-PWD c:/Users/pride/Documents/レポート課題/エージェント工学/report2/tex
+PWD c:/Users/pride/Documents/レポート課題/メディプロ/Report2/tex
 INPUT c:/texlive/2020/texmf.cnf
 INPUT c:/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2020/texmf-var/web2c/eptex/platex.fmt
-INPUT c:/Users/pride/Documents/レポート課題/エージェント工学/report2/tex/report1.tex
+INPUT c:/Users/pride/Documents/レポート課題/メディプロ/Report2/tex/report1.tex
 OUTPUT out/report1.log
 INPUT c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 INPUT c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -918,41 +918,37 @@ INPUT ./ch1.tex
 INPUT ch1.tex
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
-INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
-INPUT ./21-0801-01.png
-INPUT ./21-0801-01.png
-INPUT 21-0801-01.png
-INPUT extractbb -B cropbox -O 21-0801-01.png
-INPUT ./21-0801-01s.png
-INPUT ./21-0801-01s.png
-INPUT 21-0801-01s.png
-INPUT extractbb -B cropbox -O 21-0801-01s.png
-INPUT ./21-0801-02.png
-INPUT ./21-0801-02.png
-INPUT 21-0801-02.png
-INPUT extractbb -B cropbox -O 21-0801-02.png
-INPUT ./21-0801-02s.png
-INPUT ./21-0801-02s.png
-INPUT 21-0801-02s.png
-INPUT extractbb -B cropbox -O 21-0801-02s.png
-INPUT ./21-0801-03.png
-INPUT ./21-0801-03.png
-INPUT 21-0801-03.png
-INPUT extractbb -B cropbox -O 21-0801-03.png
-INPUT ./21-0801-04.png
-INPUT ./21-0801-04.png
-INPUT 21-0801-04.png
-INPUT extractbb -B cropbox -O 21-0801-04.png
-INPUT ./ch2.tex
-INPUT ch2.tex
-INPUT ./ch2.tex
-INPUT ch2.tex
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT ./noisedeleteの中身1.PNG
+INPUT ./noisedeleteの中身1.PNG
+INPUT noisedeleteの中身1.PNG
+INPUT extractbb -B cropbox -O noisedeleteの中身1.PNG
+INPUT ./d850429avhrr4.bmp
+INPUT ./d850429avhrr4.bmp
+INPUT d850429avhrr4.bmp
+INPUT extractbb -B cropbox -O d850429avhrr4.bmp
+INPUT ./計測方法の正確さを確認.PNG
+INPUT ./計測方法の正確さを確認.PNG
+INPUT 計測方法の正確さを確認.PNG
+INPUT extractbb -B cropbox -O 計測方法の正確さを確認.PNG
+INPUT ./計測方法の正確さを確認の出力.PNG
+INPUT ./計測方法の正確さを確認の出力.PNG
+INPUT 計測方法の正確さを確認の出力.PNG
+INPUT extractbb -B cropbox -O 計測方法の正確さを確認の出力.PNG
+INPUT ./milltimeのプログラム.PNG
+INPUT ./milltimeのプログラム.PNG
+INPUT milltimeのプログラム.PNG
+INPUT extractbb -B cropbox -O milltimeのプログラム.PNG
+INPUT ./milltimeの結果.PNG
+INPUT ./milltimeの結果.PNG
+INPUT milltimeの結果.PNG
+INPUT extractbb -B cropbox -O milltimeの結果.PNG
 INPUT out/report1.aux
 INPUT out/report1.out
 INPUT out/report1.out
