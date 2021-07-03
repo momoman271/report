@@ -912,12 +912,16 @@ INPUT out/report1.toc
 INPUT out/report1.toc
 INPUT out/report1.toc
 OUTPUT out/report1.toc
-INPUT ./ch1.tex
-INPUT ch1.tex
-INPUT ./ch1.tex
-INPUT ch1.tex
+INPUT ./ch0.tex
+INPUT ch0.tex
+INPUT ./ch0.tex
+INPUT ch0.tex
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/ptex-fonts/standard/tgoth10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/ptex-fonts/jis/jisg.tfm
+INPUT ./ch1.tex
+INPUT ch1.tex
+INPUT ./ch1.tex
+INPUT ch1.tex
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
@@ -933,14 +937,6 @@ INPUT ./d850429avhrr4.bmp
 INPUT ./d850429avhrr4.bmp
 INPUT d850429avhrr4.bmp
 INPUT extractbb -B cropbox -O d850429avhrr4.bmp
-INPUT ./計測方法の正確さを確認.PNG
-INPUT ./計測方法の正確さを確認.PNG
-INPUT 計測方法の正確さを確認.PNG
-INPUT extractbb -B cropbox -O 計測方法の正確さを確認.PNG
-INPUT ./計測方法の正確さを確認の出力.PNG
-INPUT ./計測方法の正確さを確認の出力.PNG
-INPUT 計測方法の正確さを確認の出力.PNG
-INPUT extractbb -B cropbox -O 計測方法の正確さを確認の出力.PNG
 INPUT ./milltimeのプログラム.PNG
 INPUT ./milltimeのプログラム.PNG
 INPUT milltimeのプログラム.PNG
@@ -949,6 +945,30 @@ INPUT ./milltimeの結果.PNG
 INPUT ./milltimeの結果.PNG
 INPUT milltimeの結果.PNG
 INPUT extractbb -B cropbox -O milltimeの結果.PNG
+INPUT ./計測方法の正確さを確認.PNG
+INPUT ./計測方法の正確さを確認.PNG
+INPUT 計測方法の正確さを確認.PNG
+INPUT extractbb -B cropbox -O 計測方法の正確さを確認.PNG
+INPUT ./計測方法の正確さを確認の出力.PNG
+INPUT ./計測方法の正確さを確認の出力.PNG
+INPUT 計測方法の正確さを確認の出力.PNG
+INPUT extractbb -B cropbox -O 計測方法の正確さを確認の出力.PNG
+INPUT ./計測方法の正確さを確認2.PNG
+INPUT ./計測方法の正確さを確認2.PNG
+INPUT 計測方法の正確さを確認2.PNG
+INPUT extractbb -B cropbox -O 計測方法の正確さを確認2.PNG
+INPUT ./計測方法の正確さを確認2結果.PNG
+INPUT ./計測方法の正確さを確認2結果.PNG
+INPUT 計測方法の正確さを確認2結果.PNG
+INPUT extractbb -B cropbox -O 計測方法の正確さを確認2結果.PNG
+INPUT ./課題1の計測1.PNG
+INPUT ./課題1の計測1.PNG
+INPUT 課題1の計測1.PNG
+INPUT extractbb -B cropbox -O 課題1の計測1.PNG
+INPUT ./課題2バブルソート.PNG
+INPUT ./課題2バブルソート.PNG
+INPUT 課題2バブルソート.PNG
+INPUT extractbb -B cropbox -O 課題2バブルソート.PNG
 INPUT out/report1.aux
 INPUT out/report1.out
 INPUT out/report1.out
