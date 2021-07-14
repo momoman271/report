@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2021.1.4)  14 JUL 2021 09:37
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2021.1.4)  14 JUL 2021 10:43
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -631,19 +631,24 @@ LaTeX Font Info:    Font shape `JY1/gt/m/n' will be
 (Font)              scaled to size 11.53198pt on input line 4.
 ) [1
 
-] [2
+] (./ch1.tex
+LaTeX Font Info:    Font shape `JT1/mc/m/n' will be
+(Font)              scaled to size 8.64899pt on input line 8.
+) [2
+
+] [3
 
 ] (out/report1.aux)
 Package rerunfilecheck Info: File `report1.out' has not changed.
-(rerunfilecheck)             Checksum: AC34F7B63A09D5C26778CEC29A54016A;207.
+(rerunfilecheck)             Checksum: D4D762B0AB765118033430408F5D5F39;487.
  ) 
 Here is how much of TeX's memory you used:
- 10425 strings out of 479782
- 183552 string characters out of 5883012
- 484321 words of memory out of 5000000
- 27601 multiletter control sequences out of 15000+600000
- 434900 words of font info for 134 fonts, out of 8000000 for 9000
+ 10437 strings out of 479782
+ 183668 string characters out of 5883012
+ 505735 words of memory out of 5000000
+ 27610 multiletter control sequences out of 15000+600000
+ 435596 words of font info for 136 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
  82i,11n,85p,300b,779s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/report1.dvi (4 pages, 7552 bytes).
+Output written on out/report1.dvi (5 pages, 17976 bytes).
