@@ -965,10 +965,41 @@ INPUT ./課題1の計測1.PNG
 INPUT ./課題1の計測1.PNG
 INPUT 課題1の計測1.PNG
 INPUT extractbb -B cropbox -O 課題1の計測1.PNG
-INPUT ./課題2バブルソート.PNG
-INPUT ./課題2バブルソート.PNG
-INPUT 課題2バブルソート.PNG
-INPUT extractbb -B cropbox -O 課題2バブルソート.PNG
+INPUT ./課題1の計測10.PNG
+INPUT ./課題1の計測10.PNG
+INPUT 課題1の計測10.PNG
+INPUT extractbb -B cropbox -O 課題1の計測10.PNG
+INPUT ./課題1の計測20.PNG
+INPUT ./課題1の計測20.PNG
+INPUT 課題1の計測20.PNG
+INPUT extractbb -B cropbox -O 課題1の計測20.PNG
+INPUT ./課題1の計測s.PNG
+INPUT ./課題1の計測s.PNG
+INPUT 課題1の計測s.PNG
+INPUT extractbb -B cropbox -O 課題1の計測s.PNG
+INPUT ./bubblesort.PNG
+INPUT ./bubblesort.PNG
+INPUT bubblesort.PNG
+INPUT extractbb -B cropbox -O bubblesort.PNG
+INPUT ./quicksort.PNG
+INPUT ./quicksort.PNG
+INPUT quicksort.PNG
+INPUT extractbb -B cropbox -O quicksort.PNG
+INPUT ./noisedeleteの中身2.PNG
+INPUT ./noisedeleteの中身2.PNG
+INPUT noisedeleteの中身2.PNG
+INPUT extractbb -B cropbox -O noisedeleteの中身2.PNG
+INPUT ./課題1の計測1.PNG
+INPUT ./課題1の計測1.PNG
+INPUT 課題1の計測1.PNG
+INPUT ./ch2.tex
+INPUT ch2.tex
+INPUT ./ch2.tex
+INPUT ch2.tex
+INPUT ./ch3.tex
+INPUT ch3.tex
+INPUT ./ch3.tex
+INPUT ch3.tex
 INPUT out/report1.aux
 INPUT out/report1.out
 INPUT out/report1.out

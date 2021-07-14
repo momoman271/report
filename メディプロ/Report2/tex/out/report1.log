@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2021.1.4)  3 JUL 2021 10:36
+This is e-pTeX, Version 3.14159265-p3.8.3-191112-2.6 (utf8.sjis) (TeX Live 2020/W32TeX) (preloaded format=platex 2021.1.4)  4 JUL 2021 09:38
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -679,22 +679,51 @@ File: 課題1の計測1.PNG Graphic file (type bmp)
 <課題1の計測1.PNG>
 [4
 
-] [5]
-File: 課題2バブルソート.PNG Graphic file (type bmp)
-<課題2バブルソート.PNG>
-) [6
+]
+File: 課題1の計測10.PNG Graphic file (type bmp)
+<課題1の計測10.PNG>
+File: 課題1の計測20.PNG Graphic file (type bmp)
+<課題1の計測20.PNG>
+[5]
+File: 課題1の計測s.PNG Graphic file (type bmp)
+<課題1の計測s.PNG>
+[6
+
+]
+File: bubblesort.PNG Graphic file (type bmp)
+<bubblesort.PNG>
+File: quicksort.PNG Graphic file (type bmp)
+<quicksort.PNG>
+[7
+
+]
+File: noisedeleteの中身2.PNG Graphic file (type bmp)
+<noisedeleteの中身2.PNG>
+File: 課題1の計測1.PNG Graphic file (type bmp)
+<課題1の計測1.PNG>
+) [8
+
+] (./ch2.tex [9
+
+] [10
+
+]) [11
+
+] (./ch3.tex) [12
+
+] [13
 
 ] (out/report1.aux)
 Package rerunfilecheck Info: File `report1.out' has not changed.
-(rerunfilecheck)             Checksum: 8872D8F3AA4BD8D10D9FE2A2EC543259;645.
+(rerunfilecheck)             Checksum: E26B9273C5C7D6CEA6862212DB747909;957.
  ) 
 Here is how much of TeX's memory you used:
- 10520 strings out of 479782
- 185592 string characters out of 5883012
- 489229 words of memory out of 5000000
- 27666 multiletter control sequences out of 15000+600000
+ 10569 strings out of 479782
+ 186362 string characters out of 5883012
+ 505213 words of memory out of 5000000
+ 27699 multiletter control sequences out of 15000+600000
  435910 words of font info for 137 fonts, out of 8000000 for 9000
  934 hyphenation exceptions out of 8191
- 82i,11n,85p,291b,915s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 82i,17n,85p,291b,915s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on out/report1.dvi (8 pages, 29836 bytes).
+Output written on out/report1.dvi (15 pages, 66436 bytes).
