@@ -120,7 +120,25 @@ recycleRobotMDP.csvの表\ref{table:1}を参考にして遷移確率や報酬を
         \end{minipage}
   \end{table}
   
-  \item 以下に、case2とcase3の結果を示す。
+  \item 以下に、引数「softmax 0.1 0.9 1000 recycleRobotMDP.csv S-RRlog.csv S-RRPolicy.csv S-RRQValue.csv」
+  での、case2とcase3の結果を示す。
+  \begin{itemize}
+    \item[case2] 表\ref{table:4}のような結果となった。
+    \begin{itemize}
+      \item 状態「high」の時、行動「search」のQ値が行動「wait」よりも2倍以上高い。これは、
+      case2の報酬の与え方が、エージェントに積極的に行動「search」を行なわせていることを示している。
+      \item 状態「low」の時、行動「recharge」のq値が一番高くなっている。
+      これは、case2の報酬の与え方が、エージェントに積極的に行動「recharge」を行なわせていることを示している。
+    \end{itemize}
+    \item[case3] 表\ref{table:5}のような結果となった。
+    \begin{itemize}
+      \item リサイクルロボットがバッテリーを無駄なく使えるように、バッテリーが減る場合の報酬を行動ごとにそれぞれ減らした。
+      \item 行動「recharge」以外で状態「GOAL」になるということは、他の存在に助けてもらう必要がある。
+      そのため、リサイクルロボット単体で完結するように、行動「recharge」以外で次状態が「GOAL」になる全ての行動の報酬を「-7」にした。
+      \item 上記の理由で、行動「recharge」の報酬を「7」にした。
+      \item リサイクルロボットに積極的に「search」してもらいたいため、行動「wait」の報酬を「-1」にした。
+    \end{itemize}
+  \end{itemize}
   \begin{table}
     \begin{minipage}[t]{0.45\hsize}
       \centering
@@ -128,7 +146,7 @@ recycleRobotMDP.csvの表\ref{table:1}を参考にして遷移確率や報酬を
       \label{table:4}
       \begin{tabular}{|c|c|c|c|}
         \hline
-        状態 & 行動 & Q値 & Q値更新回数\\
+        状態 & 行動 & Q値 & Q値更新数\\
         \hline
         GOAL & N & 0 & 0 \\
         START & N & 0 & 0 \\
@@ -146,7 +164,7 @@ recycleRobotMDP.csvの表\ref{table:1}を参考にして遷移確率や報酬を
       \label{table:5}
         \begin{tabular}{|c|c|c|c|}
           \hline
-          状態 & 行動 & Q値 & Q値更新回数\\
+          状態 & 行動 & Q値 & Q値更新数\\
           \hline
           GOAL & N & 0 & 0 \\
           START & N & 0 & 0 \\
@@ -160,11 +178,125 @@ recycleRobotMDP.csvの表\ref{table:1}を参考にして遷移確率や報酬を
       \end{minipage}
   \end{table}
 
-
-
 \end{enumerate}
 
 
 
 \subsection{課題2}
-\subsubsection{計測対象}
+
+\subsection{課題3}
+
+
+
+
+\begin{table}
+  \centering
+  \caption{case3における方策値とQ値更新回数の比較}
+  \label{table:6}
+  \begin{minipage}[c]{\hsize}
+    \centering
+    \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{学習率「0.1」,割引率「0.9」} \\
+      \hline
+      状態 & 行動 & 方策値 & Q値更新数\\
+      \hline
+      high & search & 11.194368 & 54 \\
+      high & wait & 4.146994 & 54 \\
+      low & recharge & 4.310171 & 94 \\
+      low & search & 1.989767 & 94 \\
+      low & wait & 1.20334 & 94 \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[t]{0.45\hsize}
+    \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{学習率「0.2」,割引率「0.9」} \\
+      \hline
+      状態 & 行動 & 方策値 & Q値更新数\\
+      \hline
+      high & search & 11.194368 & 54 \\
+      high & wait & 4.146994 & 54 \\
+      low & recharge & 4.310171 & 94 \\
+      low & search & 1.989767 & 94 \\
+      low & wait & 1.20334 & 94 \\
+      \hline\hline
+      \multicolumn{4}{|c|}{学習率「0.3」,割引率「0.9」} \\
+      \hline
+      状態 & 行動 & 方策値 & Q値更新数\\
+      \hline
+      high & search & 11.194368 & 54 \\
+      high & wait & 4.146994 & 54 \\
+      low & recharge & 4.310171 & 94 \\
+      low & search & 1.989767 & 94 \\
+      low & wait & 1.20334 & 94 \\
+      \hline\hline
+      \multicolumn{4}{|c|}{学習率「0.4」,割引率「0.9」} \\
+      \hline
+      状態 & 行動 & 方策値 & Q値更新数\\
+      \hline
+      high & search & 11.194368 & 54 \\
+      high & wait & 4.146994 & 54 \\
+      low & recharge & 4.310171 & 94 \\
+      low & search & 1.989767 & 94 \\
+      low & wait & 1.20334 & 94 \\
+      \hline\hline
+      \multicolumn{4}{|c|}{学習率「0.5」,割引率「0.9」} \\
+      \hline
+      状態 & 行動 & 方策値 & Q値更新数\\
+      \hline
+      high & search & 11.194368 & 54 \\
+      high & wait & 4.146994 & 54 \\
+      low & recharge & 4.310171 & 94 \\
+      low & search & 1.989767 & 94 \\
+      low & wait & 1.20334 & 94 \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[r]{0.45\hsize}
+    \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{学習率「0.1」,割引率「0.8」} \\
+      \hline
+      状態 & 行動 & 方策値 & Q値更新数\\
+      \hline
+      high & search & 11.194368 & 54 \\
+      high & wait & 4.146994 & 54 \\
+      low & recharge & 4.310171 & 94 \\
+      low & search & 1.989767 & 94 \\
+      low & wait & 1.20334 & 94 \\
+      \hline\hline
+      \multicolumn{4}{|c|}{学習率「0.1」,割引率「0.7」} \\
+      \hline
+      状態 & 行動 & 方策値 & Q値更新数\\
+      \hline
+      high & search & 11.194368 & 54 \\
+      high & wait & 4.146994 & 54 \\
+      low & recharge & 4.310171 & 94 \\
+      low & search & 1.989767 & 94 \\
+      low & wait & 1.20334 & 94 \\
+      \hline\hline
+      \multicolumn{4}{|c|}{学習率「0.1」,割引率「0.6」} \\
+      \hline
+      状態 & 行動 & 方策値 & Q値更新数\\
+      \hline
+      high & search & 11.194368 & 54 \\
+      high & wait & 4.146994 & 54 \\
+      low & recharge & 4.310171 & 94 \\
+      low & search & 1.989767 & 94 \\
+      low & wait & 1.20334 & 94 \\
+      \hline\hline
+      \multicolumn{4}{|c|}{学習率「0.1」,割引率「0.5」} \\
+      \hline
+      状態 & 行動 & 方策値 & Q値更新数\\
+      \hline
+      high & search & 11.194368 & 54 \\
+      high & wait & 4.146994 & 54 \\
+      low & recharge & 4.310171 & 94 \\
+      low & search & 1.989767 & 94 \\
+      low & wait & 1.20334 & 94 \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+\end{table}
