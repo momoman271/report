@@ -1,0 +1,45 @@
+\documentclass[dvipdfmx]{jsarticle}
+\usepackage[dvipdfmx]{graphicx}
+\usepackage{HamadaLabThesis,comment,pxjahyper,multirow}
+
+\lhead{\fancyplain{}{\rightmark}}
+%
+% 演習課題レポートの番号，氏名（学番号），提出日を明記すること．
+%
+\begin{document}
+\title{\vspace{10zw}パターン認識2021 最終レポート \\}
+\date{\today} % 提出期限（厳守）
+\author{\Large{\textbf{澤 \/ 祐里}}（21--1--037--0801）} % 氏名（学番号）
+
+\thispagestyle{empty}
+\maketitle
+\thispagestyle{empty}
+\clearpage
+
+\pagenumbering{roman}
+\setcounter{page}{1}
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\hypertarget{mokuji}{\tableofcontents}
+\clearpage
+
+\cfoot{\thepage \\ \hyperlink{mokuji}{目次へ}}
+\pagenumbering{arabic}
+
+\input{ch0.tex}
+\clearpage
+
+\input{ch1.tex}
+\clearpage
+
+%\input{ch2.tex}
+%\clearpage
+
+%\input{ch3.tex}
+%\clearpage
+
+\begin{thebibliography}{9}
+  \bibitem{url1} \url{https://drive.google.com/file/d/1pqyeJ20TixzuxkGSjkr2cp0MEKh6jj6w/view?usp=drive_web&authuser=0}
+\end{thebibliography}
+
+\end{document}

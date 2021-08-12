@@ -1,0 +1,108 @@
+\section{実験結果}
+実行結果は以下の表\ref{table:1}から表\ref{table:6}のようになった。
+実行結果を見ると、「abnormal:3」と「normal:1」が足を引っ張っていることが分かる。
+この2枚の画像以外においては、識別ができている。
+\begin{table}[hbtp]
+  \begin{minipage}[t]{0.45\hsize}
+    \centering
+    \caption{normal:1の計算結果}
+    \label{table:1}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      順位 & 図形の種類 & 検索キーとの距離\\
+      \hline
+      検索キー & normal:1 & 0 \\
+      1 & abnormal:1 & 57064.65 \\
+      2 & abnormal:2 & 67249.68 \\
+      3 & normal:2 & 127601.82 \\
+      4 & abnormal:3 & 185618.27 \\
+      5 & normal:3 & 195216.89 \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[t]{0.45\hsize}
+  \centering
+  \caption{normal:2の計算結果}
+  \label{table:2}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      順位 & 図形の種類 & 検索キーとの距離\\
+      \hline
+      検索キー & normal:2 & 0 \\
+      1 & abnormal:3 & 60024.76 \\
+      2 & normal:3 & 69234.29 \\
+      3 & normal:1 & 127601.82 \\
+      4 & abnormal:1 & 180487.69 \\
+      5 & abnormal:2 & 192763.47 \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[t]{0.45\hsize}
+  \centering
+  \caption{normal:3の計算結果}
+  \label{table:3}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      順位 & 図形の種類 & 検索キーとの距離\\
+      \hline
+      検索キー & normal:3 & 0 \\
+      1 & abnormal:3 & 14820.37 \\
+      2 & normal:2 & 69234.29 \\
+      3 & normal:1 & 195216.89 \\
+      4 & abnormal:1 & 249269.56 \\
+      5 & abnormal:2 & 261287.28 \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[t]{0.45\hsize}
+    \centering
+    \caption{abnormal:1の計算結果}
+    \label{table:4}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      順位 & 図形の種類 & 検索キーとの距離\\
+      \hline
+      検索キー & abnormal:1 & 0 \\
+      1 & abnormal:2 & 14531.47 \\
+      2 & normal:1 & 57064.65 \\
+      3 & normal:2 & 180487.69 \\
+      4 & abnormal:3 & 239523.59 \\
+      5 & normal:3 & 249269.56 \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[t]{0.45\hsize}
+    \centering
+    \caption{abnormal:2の計算結果}
+    \label{table:5}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      順位 & 図形の種類 & 検索キーとの距離\\
+      \hline
+      検索キー & abnormal:2 & 0 \\
+      1 & abnormal:1 & 14531.47 \\
+      2 & normal:1 & 67249.68 \\
+      3 & normal:2 & 192763.47 \\
+      4 & abnormal:3 & 251402.24 \\
+      5 & normal:3 & 261287.28 \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+  \begin{minipage}[t]{0.64\hsize}
+    \centering
+    \caption{abnormal:3の計算結果}
+    \label{table:6}
+    \begin{tabular}{|c|c|c|}
+      \hline
+      順位 & 図形の種類 & 検索キーとの距離\\
+      \hline
+      検索キー & abnormal:3 & 0 \\
+      1 & normal:3 & 14820.37 \\
+      2 & normal:2 & 60024.76 \\
+      3 & normal:1 & 185618.27 \\
+      4 & abnormal:1 & 239523.59 \\
+      5 & abnormal:2 & 251402.24 \\
+      \hline
+    \end{tabular}
+  \end{minipage}
+\end{table}

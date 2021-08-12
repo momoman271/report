@@ -1,9 +1,10 @@
-PWD c:/Users/pride/OneDrive/ドキュメント/report/エージェント工学/lastreport/tex
+PWD c:/Users/pride/Documents/レポート課題/エージェント工学/lastreport/tex
 INPUT c:/texlive/2020/texmf.cnf
 INPUT c:/texlive/2020/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2020/texmf-var/web2c/eptex/platex.fmt
-INPUT c:/Users/pride/OneDrive/ドキュメント/report/エージェント工学/lastreport/tex/report1.tex
+INPUT c:/Users/pride/Documents/レポート課題/エージェント工学/lastreport/tex/report1.tex
 OUTPUT out/report1.log
+INPUT c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 INPUT c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 INPUT c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls
 INPUT c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jsarticle.cls
@@ -32,6 +33,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jslogo.sty
 INPUT c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jslogo.sty
 INPUT c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jslogo.sty
 INPUT c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jslogo.sty
+INPUT c:/texlive/2020/texmf-dist/tex/platex/jsclasses/jslogo.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
@@ -54,6 +57,7 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
@@ -64,6 +68,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/trig.sty
@@ -82,6 +88,7 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics-def/dvipdfmx.def
+INPUT ./HamadaLabThesis.sty
 INPUT ./HamadaLabThesis.sty
 INPUT HamadaLabThesis.sty
 INPUT ./HamadaLabThesis.sty
@@ -102,8 +109,10 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsmath.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
@@ -124,6 +133,7 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
@@ -134,6 +144,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsbsy.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
@@ -144,6 +156,9 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsopn.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amsgen.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amssymb.sty
@@ -164,6 +179,9 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/amscls/amsthm.sty
@@ -184,6 +202,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/jknapltx/mathrsfs.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx.sty
@@ -204,6 +224,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3backend/l3backend-dvipdfmx.def
@@ -224,7 +246,11 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3packages/xparse/xparse-generic.tex
+INPUT c:/texlive/2020/texmf-dist/tex/latex/amsmath/amstext.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/array.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/array.sty
@@ -245,6 +271,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/l3kernel/expl3.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
@@ -256,6 +284,10 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/fancybox/fancybox.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/fancybox/fancybox.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/fancybox/fancybox.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/fancybox/fancybox.sty
@@ -276,6 +308,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/wrapfig/wrapfig.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/multicol.sty
@@ -296,6 +330,7 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/booktabs/booktabs.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/braket/braket.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/braket/braket.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/braket/braket.sty
@@ -306,6 +341,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/braket/braket.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/braket/braket.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/braket/braket.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/braket/braket.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/braket/braket.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
@@ -334,6 +371,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/enumerate.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/enumerate.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/enumerate.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/tools/enumerate.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/ulem/ulem.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/ulem/ulem.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/ulem/ulem.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/ulem/ulem.sty
@@ -355,6 +394,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/boxedminipage/boxedminipage.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
@@ -375,6 +416,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/mathptmx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/mathptmx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/mathptmx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/mathptmx.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/hyperref/hyperref.sty
@@ -395,6 +438,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
@@ -415,6 +460,7 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
@@ -425,6 +471,12 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
@@ -445,6 +497,7 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/kvdefinekeys/kvdefinekeys.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
@@ -455,6 +508,10 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/pdfescape/pdfescape.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/hycolor/hycolor.sty
@@ -475,6 +532,8 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/letltxmacro/letltxmacro.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/auxhook/auxhook.sty
@@ -495,6 +554,9 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/kvsetkeys/kvsetkeys.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
 INPUT c:/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
 INPUT c:/texlive/2020/texmf-dist/tex/latex/hyperref/pd1enc.def
@@ -509,6 +571,7 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
@@ -519,6 +582,9 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/etexcmds/etexcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/graphics/color.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
@@ -531,6 +597,7 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/url/url.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
@@ -541,6 +608,9 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/bitset/bitset.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/intcalc/intcalc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
@@ -551,6 +621,9 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/atbegshi/atbegshi.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/atbegshi-ltx.sty
@@ -580,13 +653,18 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/rerunfilecheck/rerunfilecheck.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/pdftexcmds/pdftexcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/base/atveryend-ltx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/atveryend-ltx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/base/atveryend-ltx.sty
-INPUT c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/atveryend-ltx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/base/atveryend-ltx.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/atveryend/atveryend.sty
@@ -605,6 +683,9 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/uniquecounter/uniquecounter.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/bigintcalc/bigintcalc.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
 INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
 INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
@@ -615,6 +696,9 @@ INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
 INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
 INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
 INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
+INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/etoolbox/etoolbox.sty
@@ -637,6 +721,7 @@ INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper-enc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper-enc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper-enc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper-enc.sty
+INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper-enc.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
@@ -647,6 +732,9 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/comment/comment.sty
+INPUT c:/texlive/2020/texmf-dist/tex/platex/pxjahyper/pxjahyper.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/multirow/multirow.sty
@@ -676,6 +764,7 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 INPUT c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 INPUT c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 INPUT c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+INPUT c:/texlive/2020/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
 INPUT c:/texlive/2020/texmf-dist/tex/latex/translator/translator-basic-dictionary-English.dict
@@ -690,6 +779,7 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/hyperref/nameref.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
@@ -700,6 +790,9 @@ INPUT c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
 INPUT c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/refcount/refcount.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/infwarerr/infwarerr.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
@@ -710,6 +803,9 @@ INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
 INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/gettitlestring/gettitlestring.sty
+INPUT c:/texlive/2020/texmf-dist/tex/latex/kvoptions/kvoptions.sty
+INPUT c:/texlive/2020/texmf-dist/tex/generic/ltxcmds/ltxcmds.sty
 INPUT out/report1.out
 INPUT out/report1.out
 INPUT out/report1.out
@@ -839,6 +935,11 @@ INPUT ./ch1.tex
 INPUT ch1.tex
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/ptex-fonts/standard/tmin10.tfm
 INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
+INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT c:/texlive/2020/texmf-dist/tex/latex/psnfss/ts1ptm.fd
+INPUT c:/texlive/2020/texmf-dist/fonts/tfm/adobe/times/ptmr8c.tfm
 INPUT out/report1.aux
 INPUT out/report1.out
 INPUT out/report1.out

@@ -1,0 +1,220 @@
+\section{結果}
+\subsection{課題1}
+\begin{itemize}
+  \item 課題1の出力結果は表\ref{table:1}～表\ref{table:3}のようになった。
+  \begin{itemize}
+    \item[→] 表\ref{table:1}を見て分かる通り、処理を1回だけ計測した場合は、最初の2回分の処理時間が長くなっている。
+    それとは異なり、表\ref{table:2}と表\ref{table:3}は、最初から処理時間が安定しているように見える。
+
+  \end{itemize}
+  \begin{table}[hbtp]
+    \begin{tabular}{ccc}
+      \begin{minipage}[t]{0.30\hsize}
+      \centering
+      \caption{課題1の計測結果}
+      \label{table:1}
+        \begin{tabular}{|l|rl|}
+          \hline
+          試行回数 & \multicolumn{2}{c|}{処理時間}\\
+          \hline
+          1回目 & 28 & ms \\
+          2回目 & 25 & ms \\
+          3回目 & 17 & ms \\
+          4回目 & 15 & ms \\
+          5回目 & 15 & ms \\
+          6回目 & 15 & ms \\
+          7回目 & 15 & ms \\
+          8回目 & 15 & ms \\
+          9回目 & 15 & ms \\
+          10回目 & 15 & ms \\
+          11回目 & 15 & ms \\
+          12回目 & 15 & ms \\
+          13回目 & 15 & ms \\
+          14回目 & 16 & ms \\
+          15回目 & 15 & ms \\
+          16回目 & 15 & ms \\
+          17回目 & 15 & ms \\
+          18回目 & 15 & ms \\
+          19回目 & 15 & ms \\
+          20回目 & 14 & ms \\
+          \hline
+        \end{tabular}
+      \end{minipage}
+      \begin{minipage}[t]{0.33\hsize}
+        \centering
+        \caption{10回分を計測して10で割った結果}
+        \label{table:2}
+          \begin{tabular}{|l|rl|}
+            \hline
+            試行回数 & \multicolumn{2}{c|}{処理時間}\\
+            \hline
+            1回目 & 17 & ms \\
+            2回目 & 15 & ms \\
+            3回目 & 15 & ms \\
+            4回目 & 15 & ms \\
+            5回目 & 15 & ms \\
+            6回目 & 15 & ms \\
+            7回目 & 15 & ms \\
+            8回目 & 16 & ms \\
+            9回目 & 16 & ms \\
+            10回目 & 16 & ms \\
+            11回目 & 16 & ms \\
+            12回目 & 16 & ms \\
+            13回目 & 15 & ms \\
+            14回目 & 15 & ms \\
+            15回目 & 15 & ms \\
+            16回目 & 15 & ms \\
+            17回目 & 15 & ms \\
+            18回目 & 15 & ms \\
+            19回目 & 15 & ms \\
+            20回目 & 15 & ms \\
+            \hline
+          \end{tabular}
+        \end{minipage}
+        \begin{minipage}[t]{0.33\hsize}
+          \centering
+          \caption{20回分を計測して20で割った結果}
+          \label{table:3}
+            \begin{tabular}{|l|rl|}
+              \hline
+              試行回数 & \multicolumn{2}{c|}{処理時間}\\
+              \hline
+              1回目 & 16 & ms \\
+              2回目 & 15 & ms \\
+              3回目 & 15 & ms \\
+              4回目 & 15 & ms \\
+              5回目 & 15 & ms \\
+              6回目 & 15 & ms \\
+              7回目 & 15 & ms \\
+              8回目 & 15 & ms \\
+              9回目 & 15 & ms \\
+              10回目 & 15 & ms \\
+              11回目 & 15 & ms \\
+              12回目 & 15 & ms \\
+              13回目 & 15 & ms \\
+              14回目 & 16 & ms \\
+              15回目 & 15 & ms \\
+              16回目 & 16 & ms \\
+              17回目 & 15 & ms \\
+              18回目 & 15 & ms \\
+              19回目 & 15 & ms \\
+              20回目 & 15 & ms \\
+              \hline
+            \end{tabular}
+          \end{minipage}
+    \end{tabular}
+  \end{table}
+  \clearpage
+\item 課題1のプログラムを分割して計測した結果は表\ref{table:6}のようになった。
+\begin{itemize}
+  \item[→] 表を見てわかる通り、変数の作成には、ほとんど時間は使われておらず、ほぼすべての時間が画像処理に使われている。
+\end{itemize}
+  \begin{table}[hbtp]
+    \centering
+      \caption{課題1のプログラムを分割して計測した結果}
+      \label{table:6}
+        \begin{tabular}{|l|c|c|}
+          \hline
+          試行回数 & 変数作成時間 &処理時間\\
+          \hline
+          1回目 & 0ms & 31ms \\
+          2回目 & 0ms & 39ms \\
+          3回目 & 1ms & 16ms \\
+          4回目 & 0ms & 17ms \\
+          5回目 & 0ms & 16ms \\
+          6回目 & 0ms & 16ms \\
+          7回目 & 0ms & 17ms \\
+          8回目 & 0ms & 15ms \\
+          9回目 & 0ms & 16ms \\
+          10回目 & 0ms & 14ms \\
+          11回目 & 1ms & 16ms \\
+          12回目 & 0ms & 15ms \\
+          13回目 & 0ms & 15ms \\
+          14回目 & 0ms & 16ms \\
+          15回目 & 1ms & 15ms \\
+          16回目 & 0ms & 15ms \\
+          17回目 & 1ms & 15ms \\
+          18回目 & 0ms & 15ms \\
+          19回目 & 1ms & 15ms \\
+          20回目 & 0ms & 15ms \\
+          \hline
+        \end{tabular}
+  \end{table}
+
+\end{itemize}
+\clearpage
+
+\subsection{課題2}
+\begin{itemize}
+  \item 課題2の出力結果は表\ref{table:4}～表\ref{table:5}のようになった。
+  \begin{itemize}
+    \item[→] 表を見てわかる通り、ソートアルゴリズムをクイックソートに変えてからは、
+    バブルソートを使っていた時に見られた最初の2回の処理時間が長くなる現象がなくなっている。
+  \end{itemize}
+  \item \begin{table}[hbtp]
+    \begin{tabular}{ccc}
+      \begin{minipage}[t]{0.45\hsize}
+      \centering
+      \caption{バブルソートを使った計測結果}
+      \label{table:4}
+        \begin{tabular}{|l|rl|}
+          \hline
+          試行回数 & \multicolumn{2}{c|}{処理時間}\\
+          \hline
+          1回目 & 28 & ms \\
+          2回目 & 25 & ms \\
+          3回目 & 17 & ms \\
+          4回目 & 15 & ms \\
+          5回目 & 15 & ms \\
+          6回目 & 15 & ms \\
+          7回目 & 15 & ms \\
+          8回目 & 15 & ms \\
+          9回目 & 15 & ms \\
+          10回目 & 15 & ms \\
+          11回目 & 15 & ms \\
+          12回目 & 15 & ms \\
+          13回目 & 15 & ms \\
+          14回目 & 16 & ms \\
+          15回目 & 15 & ms \\
+          16回目 & 15 & ms \\
+          17回目 & 15 & ms \\
+          18回目 & 15 & ms \\
+          19回目 & 15 & ms \\
+          20回目 & 14 & ms \\
+          \hline
+        \end{tabular}
+      \end{minipage}
+      \begin{minipage}[t]{0.45\hsize}
+        \centering
+        \caption{クイックソートを使った計測結果}
+        \label{table:5}
+          \begin{tabular}{|l|rl|}
+            \hline
+            試行回数 & \multicolumn{2}{c|}{処理時間}\\
+            \hline
+            1回目 & 17 & ms \\
+            2回目 & 15 & ms \\
+            3回目 & 15 & ms \\
+            4回目 & 15 & ms \\
+            5回目 & 15 & ms \\
+            6回目 & 15 & ms \\
+            7回目 & 15 & ms \\
+            8回目 & 16 & ms \\
+            9回目 & 16 & ms \\
+            10回目 & 16 & ms \\
+            11回目 & 16 & ms \\
+            12回目 & 16 & ms \\
+            13回目 & 15 & ms \\
+            14回目 & 15 & ms \\
+            15回目 & 15 & ms \\
+            16回目 & 15 & ms \\
+            17回目 & 15 & ms \\
+            18回目 & 15 & ms \\
+            19回目 & 15 & ms \\
+            20回目 & 15 & ms \\
+            \hline
+          \end{tabular}
+        \end{minipage}
+    \end{tabular}
+  \end{table}
+\end{itemize}

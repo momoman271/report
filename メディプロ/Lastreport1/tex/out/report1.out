@@ -1,0 +1,9 @@
+%このファイルは日本語文字を含みます.
+\BOOKMARK [1][-]{section.1}{目的}{}% 1
+\BOOKMARK [1][-]{section.2}{課題（類似画像検索システム）の概要}{}% 2
+\BOOKMARK [2][-]{subsection.2.1}{ソースコードとアルゴリズムの説明}{section.2}% 3
+\BOOKMARK [2][-]{subsection.2.2}{何を入力して、どのように出力されるのか}{section.2}% 4
+\BOOKMARK [1][-]{section.3}{画像特徴量の計算結果}{}% 5
+\BOOKMARK [1][-]{section.4}{類似画像検索の実験結果}{}% 6
+\BOOKMARK [1][-]{section.5}{考察}{}% 7
+\BOOKMARK [1][-]{section.6}{むすび}{}% 8

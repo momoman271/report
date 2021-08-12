@@ -1,5 +1,6 @@
-\section{手順}
+\section{本論}
 \subsection{課題1}
+\subsubsection{手順}
 recycleRobotMDP.csvの表\ref{table:1}を参考にして遷移確率や報酬を変更したcase2, case3を作
 成する。作成した報酬の与え方がエージェントの目標になっていることを示す。
 \begin{table}[hbtp]
@@ -35,33 +36,63 @@ recycleRobotMDP.csvの表\ref{table:1}を参考にして遷移確率や報酬を
   \end{minipage}
 \end{table}
 
-\begin{enumerate}
-  \item case2,case3をそれぞれ以下のように作成した。
+
+case2,case3をそれぞれ以下のように作成した。
+\begin{itemize}
+  \item[case2] 表\ref{table:2}のように、遷移確率は変更せず報酬だけを変更した。
+  報酬の決め方は、以下の点を意識した。
   \begin{itemize}
-    \item[case2] 表\ref{table:2}のように、遷移確率は変更せず報酬だけを変更した。
-    報酬の決め方は、以下の点を意識した。
-    \begin{itemize}
-      \item 行動「recharge」以外で状態「GOAL」になるということは、他の存在に助けてもらう必要がある。
-      そのため、リサイクルロボット単体で完結するように、行動「recharge」以外で次状態が「GOAL」になる全ての行動の報酬を「-7」にした。
-      \item 上記の理由で、行動「recharge」の報酬を「7」にした。
-      \item リサイクルロボットに積極的に「search」してもらいたいため、行動「wait」の報酬を「-1」にした。
-    \end{itemize}
-    \item[case3] 表\ref{table:3}のように、遷移確率を変更して、時間経過でリサイクルロボットのバッテリーが減るようにした。
-    報酬の決め方は、以下の点を意識した。
-    \begin{itemize}
-      \item リサイクルロボットがバッテリーを無駄なく使えるように、バッテリーが減る場合の報酬を行動ごとにそれぞれ減らした。
-      \item 行動「recharge」以外で状態「GOAL」になるということは、他の存在に助けてもらう必要がある。
-      そのため、リサイクルロボット単体で完結するように、行動「recharge」以外で次状態が「GOAL」になる全ての行動の報酬を「-7」にした。
-      \item 上記の理由で、行動「recharge」の報酬を「7」にした。
-      \item リサイクルロボットに積極的に「search」してもらいたいため、行動「wait」の報酬を「-1」にした。
-    \end{itemize}
+    \item 行動「recharge」以外で状態「GOAL」になるということは、他の存在に助けてもらう必要がある。
+    そのため、リサイクルロボット単体で完結するように、行動「recharge」以外で次状態が「GOAL」になる全ての行動の報酬を「-7」にした。
+    \item 上記の理由で、行動「recharge」の報酬を「7」にした。
+    \item リサイクルロボットに積極的に「search」してもらいたいため、行動「wait」の報酬を「-1」にした。
   \end{itemize}
-  
-  \begin{table}
+  \item[case3] 表\ref{table:3}のように、遷移確率を変更して、「0.1」などの小さな確率でリサイクルロボットのバッテリーが減るようにした。
+  報酬の決め方は、以下の点を意識した。
+  \begin{itemize}
+    \item リサイクルロボットがバッテリーを無駄なく使えるように、バッテリーが減る場合の報酬を行動ごとにそれぞれ減らした。
+    \item 行動「recharge」以外で状態「GOAL」になるということは、他の存在に助けてもらう必要がある。
+    そのため、リサイクルロボット単体で完結するように、行動「recharge」以外で次状態が「GOAL」になる全ての行動の報酬を「-7」にした。
+    \item 上記の理由で、行動「recharge」の報酬を「7」にした。
+    \item リサイクルロボットに積極的に「search」してもらいたいため、行動「wait」の報酬を「-1」にした。
+  \end{itemize}
+\end{itemize}
+
+\begin{table}
+  \begin{minipage}[t]{0.45\hsize}
+    \centering
+    \caption{作成したMDP(case2)}
+    \label{table:2}
+      \begin{tabular}{|c|c|c|c|c|}
+        \hline
+        状態 & 行動 & 次状態 & 遷移確率 & 報酬\\
+        \hline
+        \hline
+        START & N & high & 1 & 0 \\
+        \hline
+        high & search & high & 0.8 & 10 \\
+        high & search & low & 0.2 & 4 \\
+        \hline
+        low & search & GOAL & 0.1 & -7 \\
+        low & search & low & 0.9 & 2 \\
+        \hline
+        high & wait & high & 1 & -1 \\
+        high & wait & low & 0 & 0 \\
+        \hline
+        low & wait & GOAL & 0 & 0 \\
+        low & wait & low & 1 & -1 \\
+        \hline
+        low & recharge & GOAL & 1 & 7 \\
+        low & recharge & low & 0 & 0 \\
+        \hline
+        GOAL & N & high & 1 & 0 \\
+        \hline
+      \end{tabular}
+    \end{minipage}
     \begin{minipage}[t]{0.45\hsize}
       \centering
-      \caption{作成したMDP(case2)}
-      \label{table:2}
+      \caption{作成したMDP(case3)}
+      \label{table:3}
         \begin{tabular}{|c|c|c|c|c|}
           \hline
           状態 & 行動 & 次状態 & 遷移確率 & 報酬\\
@@ -75,132 +106,56 @@ recycleRobotMDP.csvの表\ref{table:1}を参考にして遷移確率や報酬を
           low & search & GOAL & 0.1 & -7 \\
           low & search & low & 0.9 & 2 \\
           \hline
-          high & wait & high & 1 & -1 \\
-          high & wait & low & 0 & 0 \\
+          high & wait & high & 0.9 & -1 \\
+          high & wait & low & 0.1 & -4 \\
           \hline
-          low & wait & GOAL & 0 & 0 \\
-          low & wait & low & 1 & -1 \\
+          low & wait & GOAL & 0.1 & -7 \\
+          low & wait & low & 0.9 & -1 \\
           \hline
-          low & recharge & GOAL & 1 & 7 \\
-          low & recharge & low & 0 & 0 \\
+          low & recharge & GOAL & 0.8 & 7 \\
+          low & recharge & low & 0.2 & -1 \\
           \hline
           GOAL & N & high & 1 & 0 \\
           \hline
         \end{tabular}
       \end{minipage}
-      \begin{minipage}[t]{0.45\hsize}
-        \centering
-        \caption{作成したMDP(case3)}
-        \label{table:3}
-          \begin{tabular}{|c|c|c|c|c|}
-            \hline
-            状態 & 行動 & 次状態 & 遷移確率 & 報酬\\
-            \hline
-            \hline
-            START & N & high & 1 & 0 \\
-            \hline
-            high & search & high & 0.8 & 10 \\
-            high & search & low & 0.2 & 4 \\
-            \hline
-            low & search & GOAL & 0.1 & -7 \\
-            low & search & low & 0.9 & 2 \\
-            \hline
-            high & wait & high & 0.9 & -1 \\
-            high & wait & low & 0.1 & -4 \\
-            \hline
-            low & wait & GOAL & 0.1 & -7 \\
-            low & wait & low & 0.9 & -1 \\
-            \hline
-            low & recharge & GOAL & 0.8 & 7 \\
-            low & recharge & low & 0.2 & -1 \\
-            \hline
-            GOAL & N & high & 1 & 0 \\
-            \hline
-          \end{tabular}
-        \end{minipage}
-  \end{table}
-  
-  \item 以下に、引数「softmax 0.1 0.9 1000 recycleRobotMDP.csv S-RRlog.csv S-RRPolicy.csv S-RRQValue.csv」
-  での、case2とcase3の結果を示す。
+\end{table}
+
+\subsubsection{結果}
+以下に、引数「softmax 0.1 0.9 1000 recycleRobotMDP.csv S-RRlog.csv S-RRPolicy.csv S-RRQValue.csv」
+での、case2とcase3の結果を示す。
+\begin{itemize}
+  \item[case2] 表\ref{table:4}のような結果となった。
   \begin{itemize}
-    \item[case2] 表\ref{table:4}のような結果となった。
-    \begin{itemize}
-      \item 状態「high」の時、行動「search」のQ値が行動「wait」よりも2倍以上高い。これは、
-      case2の報酬の与え方が、エージェントに積極的に行動「search」を行なわせていることを示している。
-      \item 状態「low」の時、行動「recharge」のq値が一番高くなっている。
-      これは、case2の報酬の与え方が、エージェントに積極的に行動「recharge」を行なわせていることを示している。
-    \end{itemize}
-    \item[case3] 表\ref{table:5}のような結果となった。
-    \begin{itemize}
-      \item リサイクルロボットがバッテリーを無駄なく使えるように、バッテリーが減る場合の報酬を行動ごとにそれぞれ減らした。
-      \item 行動「recharge」以外で状態「GOAL」になるということは、他の存在に助けてもらう必要がある。
-      そのため、リサイクルロボット単体で完結するように、行動「recharge」以外で次状態が「GOAL」になる全ての行動の報酬を「-7」にした。
-      \item 上記の理由で、行動「recharge」の報酬を「7」にした。
-      \item リサイクルロボットに積極的に「search」してもらいたいため、行動「wait」の報酬を「-1」にした。
-    \end{itemize}
+    \item 状態「high」の時、行動「search」のQ値が行動「wait」よりも2倍以上高い。これは、
+    行動「wait」の報酬を「-1」にしたことが影響して、エージェントに積極的に行動「search」を行なわせていることを示している。
+    \item 状態「low」の時、行動「recharge」のq値が一番高くなっている。これは、
+    行動「recharge」以外で次状態が「GOAL」になる全ての行動の報酬を「-7」にしたことに加え、
+    行動「recharge」の報酬を「7」にしたことが影響して、エージェントに積極的に行動「recharge」を行なわせていることを示している。
   \end{itemize}
-  \begin{table}
-    \begin{minipage}[t]{0.45\hsize}
-      \centering
-      \caption{case2の結果}
-      \label{table:4}
-      \begin{tabular}{|c|c|c|c|}
-        \hline
-        状態 & 行動 & Q値 & Q値更新数\\
-        \hline
-        GOAL & N & 0 & 0 \\
-        START & N & 0 & 0 \\
-        high & search & 11.194368 & 54 \\
-        high & wait & 4.146994 & 54 \\
-        low & recharge & 4.310171 & 94 \\
-        low & search & 1.989767 & 94 \\
-        low & wait & 1.20334 & 94 \\
-        \hline
-      \end{tabular}
-    \end{minipage}
-    \begin{minipage}[t]{0.45\hsize}
-      \centering
-      \caption{case3の結果}
-      \label{table:5}
-        \begin{tabular}{|c|c|c|c|}
-          \hline
-          状態 & 行動 & Q値 & Q値更新数\\
-          \hline
-          GOAL & N & 0 & 0 \\
-          START & N & 0 & 0 \\
-          high & search & 9.995437 & 58 \\
-          high & wait & 3.695292 & 58 \\
-          low & recharge & 3.895574 & 109 \\
-          low & search & 1.728605 & 109 \\
-          low & wait & 0.750725 & 109 \\
-          \hline
-        \end{tabular}
-      \end{minipage}
-  \end{table}
-
-\end{enumerate}
-
-
-
-\subsection{課題2}
-
-\subsection{課題3}
-
-
-
-
+  \item[case3] 表\ref{table:5}のような結果となった。
+  \begin{itemize}
+    \item 状態「high」の時、行動「search」のQ値が行動「wait」よりも3倍近く高い。これは、
+    バッテリーが減る場合の報酬を行動ごとにそれぞれ減らしたことによる影響で、より行動「search」が選ばれやすくなったことを示している。
+    \item 状態「low」の時、行動「recharge」のq値が一番高くなっている。これは、
+    行動「recharge」以外で次状態が「GOAL」になる全ての行動の報酬を「-7」にしたことに加え、
+    行動「recharge」の報酬を「7」にしたことが影響して、エージェントに積極的に行動「recharge」を行なわせていることを示している。
+    \item 小さい確率でバッテリーが減るように遷移確率を変更した影響で、状態「low」の時の行動「wait」のQ値がcase2に比べて
+    減っている。
+  \end{itemize}
+\end{itemize}
+\clearpage
 \begin{table}
-  \centering
-  \caption{case3における方策値とQ値更新回数の比較}
-  \label{table:6}
-  \begin{minipage}[c]{\hsize}
+  \begin{minipage}[t]{0.45\hsize}
     \centering
+    \caption{case2の結果}
+    \label{table:4}
     \begin{tabular}{|c|c|c|c|}
       \hline
-      \multicolumn{4}{|c|}{学習率「0.1」,割引率「0.9」} \\
+      状態 & 行動 & Q値 & Q値更新数\\
       \hline
-      状態 & 行動 & 方策値 & Q値更新数\\
-      \hline
+      GOAL & N & 0 & 0 \\
+      START & N & 0 & 0 \\
       high & search & 11.194368 & 54 \\
       high & wait & 4.146994 & 54 \\
       low & recharge & 4.310171 & 94 \\
@@ -210,93 +165,190 @@ recycleRobotMDP.csvの表\ref{table:1}を参考にして遷移確率や報酬を
     \end{tabular}
   \end{minipage}
   \begin{minipage}[t]{0.45\hsize}
+    \centering
+    \caption{case3の結果}
+    \label{table:5}
+      \begin{tabular}{|c|c|c|c|}
+        \hline
+        状態 & 行動 & Q値 & Q値更新数\\
+        \hline
+        GOAL & N & 0 & 0 \\
+        START & N & 0 & 0 \\
+        high & search & 9.995437 & 58 \\
+        high & wait & 3.695292 & 58 \\
+        low & recharge & 3.895574 & 109 \\
+        low & search & 1.728605 & 109 \\
+        low & wait & 0.750725 & 109 \\
+        \hline
+      \end{tabular}
+    \end{minipage}
+\end{table}
+
+\subsubsection{考察}
+\begin{itemize}
+  \item case2の結果とcase3の結果を見比べると、case3では、状態「low」の時の行動「wait」のQ値が半分近くまで減っている。
+  他の行動のQ値も少し減ってはいるものの、行動「wait」ほどは減ってはいない。
+  このことから、相対的に行動「recharge」と行動「search」の価値が上がっていることが分かる。
+  これは、case3でバッテリーが時間経過でも減るという概念を追加した影響で、「wait」のQ値が減少した。また、状態「low」になる
+  頻度が増えたことで行動「recharge」の価値が上がった。
+  しかし、case3では、行動「recharge」にも失敗の概念を追加しているため、行動「recharge」の価値の上昇が抑えられたことで、
+  行動「search」も選ばれやすくなり、
+  その結果として、行動「recharge」と行動「search」の価値が共に上がったと考えられる。
+  \item MDP上で、case2とcase3での状態「high」だけを見比べると、その違いはcase3での行動「wait」に報酬が「-4」の遷移先が増えただけで
+  あるため、case3の行動「wait」の価値が下がることが予想できる。
+  しかし、case2の結果とcase3の結果を見比べると、case3では、状態「high」の時の行動のQ値が全体的に下がっている上に、
+  行動「search」の方が行動「wait」よりもQ値が多く下がってしまっている。
+  なぜこのような結果となったのかを考えると、まず、状態「high」の行動「search」と「wait」では、「search」の方が、次状態が「low」になる確率が高い。
+  また、case3ではcase2に比べて、状態「low」の場合にQ値が下がってしまう確率の合計が増えている。
+  以上のことから、状態「high」の時の行動「search」のQ値が下がってしまったと考えられる。
+\end{itemize}
+
+\clearpage
+\subsection{課題2}
+\begin{itemize}
+  \setlength{\leftskip}{2.0cm}
+  \item[Greedy選択] ある状態sにおいて、様々な行動の選択肢が存在したとする。
+  その時の、ある行動aのQ値を状態sにおける全ての行動のQ値の合計で
+  割って平均値を求める。求めた値を状態sでの行動aの価値とする。同様に、他の行動b
+  のQ値も状態sにおける全ての行動のQ値の合計で割って平均値を求める。
+  求めた値を状態sでの行動bの価値とする。このようにして、状態sにおける全ての行動の価値を求めて
+  、それらの行動の中で価値が1番高い行動を選択する。
+  この手法では、常にQ値で行動が決まるため、ランダム性は存在しない。\cite{url1}
+  \item[eGreedy選択] 上記のGreedy選択にランダム性を持たせたもので、確率「1-ε」でGreedy選択を
+  行う。残りの確率「ε」では、ランダムに行動を選択する。εの値は0から1で任意に決める。
+  ランダム性があるため、学習中に主に使われる。\cite{url1}
+  \item[ボルツマン手法] ある状態sでの様々な行動の価値をGreedy選択と同様の方法で求める。
+  時間の経過によって、選択パターンが変わっていく。始めの方は、
+  様々な行動を選択するが、時間が経過するほど結果が収束していき、価値が高い行動ばかりを選ぶようになる。\cite{url1}
+  \item[ルーレット選択] ある状態sでの様々な行動の価値をGreedy選択と同様の方法で求める。
+  行動はランダムで決められるが、価値の高さの割合でそれぞれの行動の選ばれやすさの確率が決まるため、
+  価値の高い行動ほど選ばれやすい。\cite{url1}
+\end{itemize}
+
+
+\clearpage
+\subsection{課題3}
+\subsubsection{結果}
+case3でsoftmax手法を用いて、
+学習値と割引率をそれぞれ変更したところ、以下の表\ref{table:6}の
+ようになった。
+
+\begin{table}[b]
+  \centering
+  \caption{case3における方策値とQ値更新回数の比較}
+  \label{table:6}
+  \begin{minipage}[!t]{0.45\hsize}
     \begin{tabular}{|c|c|c|c|}
+      \hline
+      \multicolumn{4}{|c|}{学習率「0.1」,割引率「0.9」} \\
+      \hline
+      状態 & 行動 & 方策値 & Q値更新数\\
+      \hline
+      high & search & 0.893663 & 59 \\
+      high & wait & 0.106337 & 59 \\\hline
+      low & recharge & 0.763399 & 157 \\
+      low & search & 0.154658 & 157 \\
+      low & wait & 0.081943 & 157 \\
+      \hline
       \hline
       \multicolumn{4}{|c|}{学習率「0.2」,割引率「0.9」} \\
       \hline
       状態 & 行動 & 方策値 & Q値更新数\\
       \hline
-      high & search & 11.194368 & 54 \\
-      high & wait & 4.146994 & 54 \\
-      low & recharge & 4.310171 & 94 \\
-      low & search & 1.989767 & 94 \\
-      low & wait & 1.20334 & 94 \\
+      high & search & 0.97054 & 80 \\
+      high & wait & 0.02946 & 80 \\\hline
+      low & recharge & 0.782385 & 170 \\
+      low & search & 0.162611 & 170 \\
+      low & wait & 0.055004 & 170 \\
       \hline\hline
       \multicolumn{4}{|c|}{学習率「0.3」,割引率「0.9」} \\
       \hline
       状態 & 行動 & 方策値 & Q値更新数\\
       \hline
-      high & search & 11.194368 & 54 \\
-      high & wait & 4.146994 & 54 \\
-      low & recharge & 4.310171 & 94 \\
-      low & search & 1.989767 & 94 \\
-      low & wait & 1.20334 & 94 \\
+      high & search & 0.976938 & 88 \\
+      high & wait & 0.023062 & 88 \\\hline
+      low & recharge & 0.787632 & 150 \\
+      low & search & 0.166601 & 150 \\
+      low & wait & 0.045767 & 150 \\
       \hline\hline
       \multicolumn{4}{|c|}{学習率「0.4」,割引率「0.9」} \\
       \hline
       状態 & 行動 & 方策値 & Q値更新数\\
       \hline
-      high & search & 11.194368 & 54 \\
-      high & wait & 4.146994 & 54 \\
-      low & recharge & 4.310171 & 94 \\
-      low & search & 1.989767 & 94 \\
-      low & wait & 1.20334 & 94 \\
+      high & search & 0.978408 & 95 \\
+      high & wait & 0.021592 & 95 \\\hline
+      low & recharge & 0.78079 & 164 \\
+      low & search & 0.17033 & 164 \\
+      low & wait & 0.04888 & 164 \\
       \hline\hline
       \multicolumn{4}{|c|}{学習率「0.5」,割引率「0.9」} \\
       \hline
       状態 & 行動 & 方策値 & Q値更新数\\
       \hline
-      high & search & 11.194368 & 54 \\
-      high & wait & 4.146994 & 54 \\
-      low & recharge & 4.310171 & 94 \\
-      low & search & 1.989767 & 94 \\
-      low & wait & 1.20334 & 94 \\
+      high & search & 0.975403 & 121 \\
+      high & wait & 0.024597 & 121 \\\hline
+      low & recharge & 0.755647 & 159 \\
+      low & search & 0.175716 & 159 \\
+      low & wait & 0.068637 & 159 \\
       \hline
     \end{tabular}
   \end{minipage}
-  \begin{minipage}[r]{0.45\hsize}
+  \begin{minipage}[!t]{0.45\hsize}
     \begin{tabular}{|c|c|c|c|}
       \hline
       \multicolumn{4}{|c|}{学習率「0.1」,割引率「0.8」} \\
       \hline
       状態 & 行動 & 方策値 & Q値更新数\\
       \hline
-      high & search & 11.194368 & 54 \\
-      high & wait & 4.146994 & 54 \\
-      low & recharge & 4.310171 & 94 \\
-      low & search & 1.989767 & 94 \\
-      low & wait & 1.20334 & 94 \\
+      high & search & 0.853609 & 59 \\
+      high & wait & 0.146391 & 59 \\\hline
+      low & recharge & 0.72808 & 119 \\
+      low & search & 0.172476 & 119 \\
+      low & wait & 0.099444 & 119 \\
       \hline\hline
       \multicolumn{4}{|c|}{学習率「0.1」,割引率「0.7」} \\
       \hline
       状態 & 行動 & 方策値 & Q値更新数\\
       \hline
-      high & search & 11.194368 & 54 \\
-      high & wait & 4.146994 & 54 \\
-      low & recharge & 4.310171 & 94 \\
-      low & search & 1.989767 & 94 \\
-      low & wait & 1.20334 & 94 \\
+      high & search & 0.939968 & 80 \\
+      high & wait & 0.060032 & 80 \\\hline
+      low & recharge & 0.741986 & 152 \\
+      low & search & 0.17956 & 152 \\
+      low & wait & 0.078454 & 152 \\
       \hline\hline
       \multicolumn{4}{|c|}{学習率「0.1」,割引率「0.6」} \\
       \hline
       状態 & 行動 & 方策値 & Q値更新数\\
       \hline
-      high & search & 11.194368 & 54 \\
-      high & wait & 4.146994 & 54 \\
-      low & recharge & 4.310171 & 94 \\
-      low & search & 1.989767 & 94 \\
-      low & wait & 1.20334 & 94 \\
+      high & search & 0.942567 & 80 \\
+      high & wait & 0.057433 & 80 \\\hline
+      low & recharge & 0.787558 & 129 \\
+      low & search & 0.132545 & 129 \\
+      low & wait & 0.079897 & 129 \\
       \hline\hline
       \multicolumn{4}{|c|}{学習率「0.1」,割引率「0.5」} \\
       \hline
       状態 & 行動 & 方策値 & Q値更新数\\
       \hline
-      high & search & 11.194368 & 54 \\
-      high & wait & 4.146994 & 54 \\
-      low & recharge & 4.310171 & 94 \\
-      low & search & 1.989767 & 94 \\
-      low & wait & 1.20334 & 94 \\
+      high & search & 0.941697 & 82 \\
+      high & wait & 0.058303 & 82 \\\hline
+      low & recharge & 0.735046 & 129 \\
+      low & search & 0.209096 & 129 \\
+      low & wait & 0.055858 & 129 \\
       \hline
     \end{tabular}
   \end{minipage}
 \end{table}
+\subsubsection{考察}
+\begin{itemize}
+  \item 結果を見比べると、学習率が「0.1」の時は、状態「high」の行動「search」の方策値が「0.893663」となっているが、
+  学習率「0.2～0.5」では、方策値が「約0.97」となっている。このことから、学習率を高くすると
+  より価値の高い方法ばかりを選びやすくなっていると考えられる。
+  \item 結果を見比べると、割引率が「0.9」の時は、状態「high」の行動「search」の方策値が「0.893663」となっており、
+  割引率「0.2」では、方策値が「0.853609」と下がっている。しかし、割引率「0.7～0.5」では、方策値が「約0.94」と上がっていることから
+  、割引率ごとに方策値が変動するものの、割引率がある一定のラインを超えると方策値が収束していくと考えられる。
+  \item Q値更新数と学習率の関係を見ると、学習率が上がるたびにQ値更新数が増えていくのが分かる。このことから、
+  学習率を上げると、それに伴って学習の時間も増えていくことが考えられる。
+  \item Q値更新数と割引率の関係を見ると、学習率とは違い、Q値更新数の上がり方もばらばらであるため、
+  特定の割引率によっては、学習の時間が増加したり、逆に減少したりもすることがあると考えられる。
+\end{itemize}
